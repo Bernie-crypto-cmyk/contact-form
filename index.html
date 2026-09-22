@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us - form</title>
+</head>
+<body>
+     <main class="hero">
+        <h2 class="header">Contact Us</h2>
+
+        <form method="post" action="mailto:bernardmwangi609@gmail.com">
+            <label>First Name *</label>
+            <input type="text" name="firstName" id="first-name">
+            <small id="small-first"></small>
+
+            <label>Last Name *</label>
+            <input type="text" name="LastName" id="last-name">
+            <small id="small-last"></small>
+
+            <label>Email Address *</label>
+            <input type="email" name="email"  id="email">
+            <small id="small-email"></small>
+
+            <label>Query Type *</label>
+            <div class="input-wrap">
+                <input type="radio" name="general" id="general">
+             <label>General Enquiry</label>   
+            <input type="radio" name="support" id="support">
+            <label>Support Request</label>
+            <small id="small-query"></small>
+            </div>
+
+            <label>Message *</label>
+            <input type="text" id="message" row="5" name="message"></input>
+            <small id="small-message"></small>
+
+            <input type="checkbox" id="checkbox" name="agree">
+            <label>I consent to being contacted by the team. *</label>
+            <small id="small-agree"></small>
+
+            <button type="submit" id="button">SUBMIT</button>
+
+        </form>
+     </main>
+</body>
+</html>

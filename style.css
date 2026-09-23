@@ -24,6 +24,7 @@ input:hover{
     align-items: center;
     gap: 10px;
     border: solid 1px;
+    flex: 1;
 }
 .div-query:hover{
     border: solid 2px black;
@@ -63,25 +64,25 @@ span{
     top: 0px;
     margin:  0px 30px;
     color: white;
-    background-color: black;
+    background-color: green;
     padding: 20px;
 
     opacity: 0;
     visibility: hidden;
     transform: translateY(-50px);
-    transition: opacity 1s linear, transform 1s linear, visibility  linear 1s;
+    transition: opacity 0.3s linear, transform 1s linear, visibility  linear 1s;
 }
 .sent-message-active{
     position: fixed;
     margin:  0px 30px;
     color: white;
-    background-color: black;
+    background-color: green;
     padding: 20px;
 
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-    transition: opacity 1s linear, transform 1s linear, visibility  linear 0;
+    transition: opacity 0.3s linear, transform 1s linear, visibility  linear 0;
 
 }
 .sent-icon{
@@ -96,4 +97,32 @@ span{
 small{
     color: red;
     font-size: 1rem;
+}
+.name-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div-first{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+@media(min-width: 700px){
+    body{
+        background-color: rgb(160, 155, 155);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        background-color: white;
+        width: 80%;
+    }
+    .name-wrap{
+        flex-direction: row;
+    }
+    .input-wrap{
+        flex-direction: row;
+    }
 }

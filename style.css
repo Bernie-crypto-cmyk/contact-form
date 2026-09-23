@@ -1,0 +1,99 @@
+*{
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+height: 30px;
+border: solid 1px;
+}
+input:hover{
+    border: solid 2px black;
+}
+.div-query{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px;
+}
+.div-query:hover{
+    border: solid 2px black;
+}
+.checkbox-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    color:red;
+}
+#button{
+    height: 40px;
+    width: 50%;
+    color: white;
+    background-color: green;
+    border: solid 1px;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+.button-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#message{
+    border: solid 1px;
+}
+#message:hover{
+    border: solid 2px black;
+}
+.sent-message{
+    position: fixed;
+    top: 0px;
+    margin:  0px 30px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: opacity 1s linear, transform 1s linear, visibility  linear 1s;
+}
+.sent-message-active{
+    position: fixed;
+    margin:  0px 30px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: opacity 1s linear, transform 1s linear, visibility  linear 0;
+
+}
+.sent-icon{
+    height: 24px;
+    width: 24px;
+}
+.svg-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+small{
+    color: red;
+    font-size: 1rem;
+}

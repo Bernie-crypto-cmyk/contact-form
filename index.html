@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>contact us - form</title>
 </head>
 <body>
+    <div class="sent-message">
+            <div class="svg-wrap"><svg class="sent-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+<p>Message Sent!</p></div>
+<p>Thanks for completing the form! We'll be in touch soon!</p>
+        </div>
      <main class="hero">
         <h2 class="header">Contact Us</h2>
 
-        <form method="post" action="mailto:bernardmwangi609@gmail.com">
-            <label>First Name *</label>
-            <input type="text" name="firstName" id="first-name">
+        <form  id="form" method="post" action="mailto:bernardmwangi609@gmail.com">
+            <label>First Name <span>*</span></label>
+            <input type="text" name="firstName" id="first-name" autofill>
             <small id="small-first"></small>
 
-            <label>Last Name *</label>
-            <input type="text" name="LastName" id="last-name">
+            <label>Last Name <span>*</span></label>
+            <input type="text" name="LastName" id="last-name" autofill>
             <small id="small-last"></small>
 
-            <label>Email Address *</label>
-            <input type="email" name="email"  id="email">
+            <label>Email Address <span>*</span></label>
+            <input type="email" name="email"  id="email" autofill>
             <small id="small-email"></small>
 
-            <label>Query Type *</label>
+            
             <div class="input-wrap">
-                <input type="radio" name="general" id="general">
-             <label>General Enquiry</label>   
-            <input type="radio" name="support" id="support">
-            <label>Support Request</label>
+                <label>Query Type <span>*</span></label>
+               <div class="div-query"><input type="radio" name="query-type" id="general">
+            <label>General Enquiry</label></div> 
+            <div class="div-query"><input type="radio" name="query-type" id="support">
+            <label>Support Request</label></div>
             <small id="small-query"></small>
             </div>
 
-            <label>Message *</label>
-            <input type="text" id="message" row="5" name="message"></input>
+            <label>Message <span>*</span></label>
+            <textarea type="text" id="message" name="message" rows="5"></textarea>
             <small id="small-message"></small>
 
-            <input type="checkbox" id="checkbox" name="agree">
-            <label>I consent to being contacted by the team. *</label>
+            <div class="checkbox-wrap"><input type="checkbox" id="checkbox" name="agree">
+            <label>I consent to being contacted by the team.<span>*</span></label></div>
             <small id="small-agree"></small>
 
-            <button type="submit" id="button">SUBMIT</button>
+            <div class="button-wrap"><button type="submit" id="button">SUBMIT</button></div>
 
         </form>
      </main>
+     <script src="script.js"></script>
 </body>
 </html>
